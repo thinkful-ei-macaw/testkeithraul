@@ -1,5 +1,6 @@
-let myName(first, last){
-  return first + last;
+function jediName(firstName, lastName){
+  return lastName.slice(0,3) + firstName.slice(0,2);
+  
 }
 
-something is in Headers;
+console.log(jediName('Keith', 'Freitag'))
