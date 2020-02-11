@@ -80,3 +80,24 @@ function daysInMonth(month, year) {
 }
 
 console.log(daysInMonth('February', 2020));
+
+//final question
+function game(num) {
+if (num < 1 || num >3) {
+    throw Error(invalid)
+}
+else {
+    const randomNo = Math.floor(Math.random() * 3) + 1;
+    if (num === randomNo) {
+        return 'It\'s A Tie!';
+    }
+    else if (num === 1 && randomNo === 3 || num === 2 && randomNo === 1 || num === 3 && randomNo === 2) {
+        return 'Great Victory!';
+    }
+    else {
+        return 'The Only Winning Move Was Not To Play';
+    }
+}
+}
+
+console.log(game(3));
